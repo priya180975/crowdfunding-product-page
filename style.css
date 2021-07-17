@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Commissioner', sans-serif;
+  text-align: center;
+}
+
+#back {
+  background: url(images/image-hero-mobile.jpg);
+  height: 65vh;
+  background-position-y: -50px;
+}
+
+#back #nav {
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#back #nav #menu {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#main {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: -100px;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */
