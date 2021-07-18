@@ -9,12 +9,46 @@
   line-height: 1.6rem;
 }
 
-#container {
+body {
   background: #f3f3f3;
 }
 
-#container h2 {
+body .flex-box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .btn1 {
+  border: none;
+  background: none;
+}
+
+body input[type="radio"] {
+  border: 0px;
+  height: 2em;
+  width: 10%;
+}
+
+body .flex-box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body h2 {
   color: black;
+  padding: 1rem 0;
+}
+
+#container {
+  background: #f3f3f3;
 }
 
 #container .flex-box {
@@ -26,17 +60,24 @@
           justify-content: space-evenly;
 }
 
-#container .flex-box1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 #container p {
   margin: 1.3rem 0;
+}
+
+#container .btn {
+  border: none;
+  background: none;
+  padding: 1rem 3rem;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+#container .grey-btn {
+  background: gray;
+}
+
+#container .blocked {
+  display: none;
 }
 
 #back {
@@ -62,10 +103,6 @@
   outline: none;
 }
 
-#back #nav .blocked {
-  display: none;
-}
-
 #back #nav .menu-bar {
   position: absolute;
   background: white;
@@ -80,7 +117,7 @@
 }
 
 #back #nav .menu-bar .menu-bar-item {
-  padding: 2rem;
+  padding: 1rem;
   border-bottom: 1px solid #f3f3f3;
 }
 
@@ -110,6 +147,10 @@
   top: -130px;
 }
 
+#main #left {
+  text-align: left;
+}
+
 #main .block {
   text-align: center;
   margin-bottom: 1rem;
@@ -119,14 +160,6 @@
   padding-bottom: 2rem;
   border-radius: 10px;
   background: white;
-}
-
-#main .block .btn {
-  border: none;
-  background: none;
-  padding: 1rem 3rem;
-  border-radius: 100px;
-  cursor: pointer;
 }
 
 #main .block .green-btn {
@@ -173,12 +206,14 @@
   border-radius: 50px;
 }
 
-#main .about {
+.about {
   text-align: left;
   padding: 1rem 1rem;
+  background: white;
+  border-radius: 10px;
 }
 
-#main .about .block-small {
+.about .block-small {
   padding: 1rem;
   border: 1px solid #bdbdbd;
   border-radius: 1rem;
@@ -186,31 +221,45 @@
   margin: 1rem auto;
 }
 
-#main .about h3 {
+.about h3 {
   color: black;
   font-size: 16px;
   font-weight: bolder;
 }
 
-#main .about .green-font {
+.about .num-small {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color: black;
+}
+
+.about .green-font {
   color: #3cb4ac;
 }
 
-#main .about .margin-right {
+.about .margin-right {
   margin-right: 1rem;
 }
 
-#main .about .btn-text {
+.about .btn-text {
   font-size: 1rem;
   color: white;
 }
 
-#main .about .grey-btn {
-  background: gray;
-}
-
-#main .about .out {
+.about .out {
   background: #f8f8f8;
   opacity: 0.5;
+}
+
+.backthis {
+  position: absolute;
+  width: 85%;
+  margin: 0 7.5%;
+  top: 10em;
+}
+
+#close-btn {
+  -webkit-filter: invert(50%);
+          filter: invert(50%);
 }
 /*# sourceMappingURL=style.css.map */

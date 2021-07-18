@@ -15,25 +15,59 @@ $light-grey:#f3f3f3;;
     line-height: 1.6rem;
 }
 
+body{
+    background: $light-grey;
+    .flex-box2{
+        display: flex;
+        justify-content:space-between;
+    }
+    .btn1{
+        border:none;
+        background: none;
+    }
+    input[type="radio"]{
+        border:0px;
+        height:2em;
+        width: 10%;
+    }   
+    .flex-box1{
+        display: flex;
+        align-items: center;
+    }
+    h2{
+        color: $Black;
+        padding: 1rem 0;
+    }
+}
 
 #container{
     background: $light-grey;
-    h2{
-        color: $Black;
-    }
+    
 
     .flex-box{
         display: flex;
         justify-content: space-evenly;
     }
 
-    .flex-box1{
-        display: flex;
-        align-items: center;
-    }
-
     p{
         margin: 1.3rem 0;
+    }
+ 
+    .btn{
+        border:none;
+        background: none;
+        padding: 1rem 3rem;
+        border-radius: 100px;
+        cursor: pointer;
+    }
+
+   
+    .grey-btn{
+        background: gray;
+    }
+
+    .blocked{
+        display: none;
     }
 
 }
@@ -52,11 +86,7 @@ $light-grey:#f3f3f3;;
             border: none;
             outline: none;
             }
-            
-            .blocked{
-                display: none;
-            }
-            
+ 
             .menu-bar{
                 position: absolute;
                 background: white;
@@ -70,7 +100,7 @@ $light-grey:#f3f3f3;;
                 
 
                 .menu-bar-item{
-                    padding: 2rem;
+                    padding: 1rem;
                     border-bottom: 1px solid$light-grey;
 
                     a{
@@ -102,6 +132,9 @@ $light-grey:#f3f3f3;;
     position:relative;
     top:-130px;
     
+    #left{
+        text-align: left;
+    }
 
     .block{
         text-align: center;
@@ -112,13 +145,7 @@ $light-grey:#f3f3f3;;
         border-radius: 10px;
         background:white;
 
-        .btn{
-            border:none;
-            background: none;
-            padding: 1rem 3rem;
-            border-radius: 100px;
-            cursor: pointer;
-        }
+        
 
         .green-btn{
             background: $Moderate-cyan;
@@ -162,10 +189,14 @@ $light-grey:#f3f3f3;;
             border-radius: 50px;;
         } 
     }
+}
+
 
     .about{
         text-align:left;
         padding: 1rem 1rem;
+        background: white;
+        border-radius: 10px;
     
 
         .block-small{
@@ -182,6 +213,12 @@ $light-grey:#f3f3f3;;
             font-weight: bolder;
         }
 
+        .num-small{
+            font-size: 1.3rem;
+            font-weight: bolder;
+            color:$Black;
+        }
+
         .green-font{
             color: $Moderate-cyan;
         }
@@ -195,17 +232,28 @@ $light-grey:#f3f3f3;;
             color: white;
         }
 
-        .grey-btn{
-            background: gray;
-        }
 
         .out{
             background: rgb(248, 248, 248);
             opacity: 0.5;
         }
-
     }
-}
+
+    .backthis{
+        position:absolute;
+        width:85%;
+        margin: 0 7.5%;
+        top:10em;
+    }
+
+    #close-btn{
+        filter:invert(50%);
+    }
+
+    
+
+   
+
 
 
 
