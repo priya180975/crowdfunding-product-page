@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link href="style.css" rel="stylesheet" type="text/css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
   <title>Frontend Mentor | Crowdfunding product page</title>
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -20,26 +19,37 @@
         <button id="menu">
           <img src="images/icon-hamburger.svg" alt="menu">
         </button>
+        <div id="menu-bar">
+          <div class="menu-bar-item">
+            <h2><a href="#about">About</a></h2>
+          </div>
+          <div class="menu-bar-item">
+            <h2><a href="#discover">Discover</a></h2>
+          </div>
+          <div class="menu-bar-item">
+            <h2><a href="#getstarted">Get Started</a></h2>
+          </div>
+        </div>
       </div>
     </div>
-  <!-- About
-  Discover
-  Get Started -->
+ 
     <div id="main">
       <div class="block">
-        <img src="images/logo-mastercraft.svg" alt="Mastercraft">
+        <img src="images/logo-mastercraft.svg" alt="Mastercraft" id="logo-master">
         <h2>Mastercraft Bamboo Monitor Riser</h2>
         <p>A  beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
-        <button class="btn green-btn" id="back-btn  ">
-          Back this project
-        </button>
-        <button class="btn" id="bookmark">
-          <img src="images/icon-bookmark.svg">
-        </button>
+        <div class="flex-box">
+          <button class="btn green-btn" id="back-btn  ">
+            <h3 class="btn-text">Back this project</h3>
+          </button>
+          <button class="btn" id="bookmark">
+            <img src="images/icon-bookmark.svg">
+          </button>
+        </div>
       </div>
     
       <div class="block">
-        <div class="num">
+        <div class="num m">
           <div class="num-big">$89,914</div>
           <div>of $100,000 backed</div>
         </div>
@@ -56,7 +66,7 @@
         </div>
       </div>
  
-      <div class="block">
+      <div class="block" id="about">
         <h2>About this project</h2>
         <p>The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
         </p>
@@ -68,11 +78,11 @@
           <h3 class="green-font">Pledge $25 or more</h3>
           <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.
           </p>
-          <div>
-            <div class="num-big">101</div>left
+          <div class="flex-box1">
+            <div class="num-big margin-right">101</div>left
           </div>
           <button class="btn green-btn" id="reward">
-            Select Reward
+            <h3 class="btn-text">Select Reward</h3>
           </button>
         </div>
 
@@ -81,24 +91,24 @@
           <h3 class="green-font">Pledge $75 or more</h3>
           <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.
           </p>
-          <div>
-            <div class="num-big">64</div>left
+          <div class="flex-box1">
+            <div class="num-big margin-right">64</div>left
           </div>
           <button class="btn green-btn" id="reward">
-            Select Reward
+            <h3 class="btn-text">Select Reward</h3>
           </button>
         </div>
 
-        <div class="block-small" id="out">
+        <div class="block-small out">
           <h3>Mahogany Special Edition</h3>
           <h3 class="green-font">Pledge $200 or more</h3>
           <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.
           </p>
-          <div>
-            <div class="num-big">0</div>left
+          <div class="flex-box1">
+            <div class="num-big margin-right">0</div>left
           </div>
-          <button class="btn green-btn" id="out-of-stock">
-            Out of Stock
+          <button class="btn grey-btn" id="out-of-stock">
+            <h3 class="btn-text">Out of Stock</h3>
           </button>
         </div>
         
@@ -164,5 +174,6 @@
   <!-- Success modal end -->
       </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
