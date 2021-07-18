@@ -42,11 +42,12 @@
 #back {
   background: url(images/image-hero-mobile.jpg);
   height: 65vh;
-  background-position-y: -50px;
+  background-position-y: -70px;
 }
 
 #back #nav {
   padding: 1.5rem;
+  padding-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,8 +62,11 @@
   outline: none;
 }
 
-#back #nav #menu-bar {
+#back #nav .blocked {
   display: none;
+}
+
+#back #nav .menu-bar {
   position: absolute;
   background: white;
   width: 90%;
@@ -71,25 +75,32 @@
   border-radius: 0.8rem;
   text-align: left;
   z-index: 1;
+  -webkit-box-shadow: 1px 0 1px 1px white;
+          box-shadow: 1px 0 1px 1px white;
 }
 
-#back #nav #menu-bar .menu-bar-item {
+#back #nav .menu-bar .menu-bar-item {
   padding: 2rem;
   border-bottom: 1px solid #f3f3f3;
 }
 
-#back #nav #menu-bar .menu-bar-item a {
+#back #nav .menu-bar .menu-bar-item a {
   text-decoration: none;
   color: black;
 }
 
-#back #nav #menu-bar .menu-bar-item:nth-child(3) {
+#back #nav .menu-bar .menu-bar-item:nth-child(3) {
   border-bottom: none;
 }
 
 #logo-master {
   position: relative;
   top: -30px;
+}
+
+.main-noclick {
+  opacity: 0.6;
+  pointer-events: none;
 }
 
 #main {
@@ -162,12 +173,12 @@
   border-radius: 50px;
 }
 
-#main #about {
+#main .about {
   text-align: left;
   padding: 1rem 1rem;
 }
 
-#main #about .block-small {
+#main .about .block-small {
   padding: 1rem;
   border: 1px solid #bdbdbd;
   border-radius: 1rem;
@@ -175,30 +186,30 @@
   margin: 1rem auto;
 }
 
-#main #about h3 {
+#main .about h3 {
   color: black;
   font-size: 16px;
   font-weight: bolder;
 }
 
-#main #about .green-font {
+#main .about .green-font {
   color: #3cb4ac;
 }
 
-#main #about .margin-right {
+#main .about .margin-right {
   margin-right: 1rem;
 }
 
-#main #about .btn-text {
+#main .about .btn-text {
   font-size: 1rem;
   color: white;
 }
 
-#main #about .grey-btn {
+#main .about .grey-btn {
   background: gray;
 }
 
-#main #about .out {
+#main .about .out {
   background: #f8f8f8;
   opacity: 0.5;
 }

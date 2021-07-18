@@ -41,9 +41,10 @@ $light-grey:#f3f3f3;;
 #back{
     background: url(images/image-hero-mobile.jpg);
     height: 65vh;
-    background-position-y: -50px;
+    background-position-y: -70px;
     #nav{
         padding: 1.5rem;
+        padding-top: 3rem;
         display: flex;
         justify-content: space-between;
         #menu{
@@ -51,8 +52,12 @@ $light-grey:#f3f3f3;;
             border: none;
             outline: none;
             }
-            #menu-bar{
+            
+            .blocked{
                 display: none;
+            }
+            
+            .menu-bar{
                 position: absolute;
                 background: white;
                 width: 90%;
@@ -61,6 +66,7 @@ $light-grey:#f3f3f3;;
                 border-radius: 0.8rem;
                 text-align: left;
                 z-index: 1;
+                box-shadow: 1px 0 1px 1px white;
                 
 
                 .menu-bar-item{
@@ -85,6 +91,10 @@ $light-grey:#f3f3f3;;
     top:-30px;
 }
 
+.main-noclick{
+    opacity: 0.6;
+    pointer-events: none;
+}
 
 #main{
     width:85%;
@@ -153,9 +163,10 @@ $light-grey:#f3f3f3;;
         } 
     }
 
-    #about{
+    .about{
         text-align:left;
         padding: 1rem 1rem;
+    
 
         .block-small{
             padding: 1rem;
