@@ -16,6 +16,8 @@ $light-grey:#f3f3f3;;
 }
 
 body{
+    scroll-behavior: smooth;
+    position: relative;
     background: $light-grey;
     .flex-box2{
         display: flex;
@@ -38,38 +40,37 @@ body{
         color: $Black;
         padding: 1rem 0;
     }
-}
-
-#container{
-    background: $light-grey;
     
-
-    .flex-box{
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    p{
-        margin: 1.3rem 0;
-    }
- 
-    .btn{
-        border:none;
-        background: none;
-        padding: 1rem 3rem;
-        border-radius: 100px;
-        cursor: pointer;
-    }
-
-   
-    .grey-btn{
-        background: gray;
-    }
-
     .blocked{
         display: none;
     }
 
+    .btn{
+        border:none;
+        background: none;
+        padding: 1rem 2.3rem;
+        border-radius: 100px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .green-btn{
+        background: $Moderate-cyan;
+    }
+}
+
+#container{
+    background: $light-grey;
+    .flex-box{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    p{
+        margin: 1.3rem 0;
+    }
+    .grey-btn{
+        background: gray;
+    }
 }
 
 #back{
@@ -122,7 +123,7 @@ body{
 }
 
 .main-noclick{
-    opacity: 0.6;
+    opacity: 0.2;
     pointer-events: none;
 }
 
@@ -140,16 +141,10 @@ body{
         text-align: center;
         margin-bottom: 1rem;
         box-shadow: 0 0 10px 1px rgb(235, 233, 233);
-        padding: 1  rem 1.2rem;
+        padding: 1rem 1.2rem;
         padding-bottom: 2rem;
         border-radius: 10px;
         background:white;
-
-        
-
-        .green-btn{
-            background: $Moderate-cyan;
-        }
 
         #bookmark{
             padding:0;
@@ -192,70 +187,133 @@ body{
 }
 
 
-    .about{
-        text-align:left;
-        padding: 1rem 1rem;
-        background: white;
-        border-radius: 10px;
+.about{
+    text-align:left;
+    padding: 1rem 1rem;
+    background: white;
+    border-radius: 10px;
+
+
+    .block-small{
+        // padding: 1rem;
+        border:1px solid rgb(189, 189, 189);
+        border-radius: 1rem;
+        width: 95%;
+        margin: 1rem auto;
+    }
+        
+    h3{
+        color: $Black;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+
+    .num-small{
+        font-size: 1.3rem;
+        font-weight: bolder;
+        color:$Black;
+    }
+
+    .green-font{
+        color: $Moderate-cyan;
+    }
+
+    .margin-right{
+        margin-right: 1rem;
+    }
+
+    .btn-text{
+        font-size: 1rem;
+        color: white;
+    }
+
+
+    .out{
+        background: rgb(248, 248, 248);
+        opacity: 0.5;
+        pointer-events: none;
+    }
+    
+    .selected{
+        border:2px solid $Moderate-cyan;
+    }
+    
+}
+
+.backthis{
+    position:absolute;
+    width:85%;
+    margin: 0 7.5%;
+    top:10em;
+}
+
+#close-btn{
+    filter:invert(50%);
+}
+
+#modal-selection{
+    // border:1px solid grey;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 2px white;
+}
     
 
-        .block-small{
-            padding: 1rem;
-            border:1px solid rgb(189, 189, 189);
-            border-radius: 1rem;
-            width: 95%;
-            margin: 1rem auto;
-        }
-            
-        h3{
-            color: $Black;
-            font-size: 16px;
-            font-weight: bolder;
-        }
-
-        .num-small{
-            font-size: 1.3rem;
-            font-weight: bolder;
-            color:$Black;
-        }
-
-        .green-font{
-            color: $Moderate-cyan;
-        }
-
-        .margin-right{
-            margin-right: 1rem;
-        }
-
-        .btn-text{
-            font-size: 1rem;
-            color: white;
-        }
-
-
-        .out{
-            background: rgb(248, 248, 248);
-            opacity: 0.5;
-        }
-    }
-
-    .backthis{
-        position:absolute;
-        width:85%;
-        margin: 0 7.5%;
-        top:10em;
-    }
-
-    #close-btn{
-        filter:invert(50%);
-    }
-
+.hidden-block-small{
+    padding:1rem 0rem;
+    text-align: center;
+    border-top: 2px solid #d4d4d4;
     
+    button{
+        padding: 0.8rem 2rem;
+        span{
+            color: grey;
+            font-weight: bolder;
+            margin-right: 0.5rem;
+        }
+    }
 
-   
+    .button-grey-back{
+        border: 1px solid #d4d4d4;
+        padding:0.8rem 1.5rem;
+    }   
+    .num-small1{
+        font-size: 1.1rem;
+    }
 
+    input{
+        width: 40px;
+        border:none;
+        background: none;
+        outline: none;
+    }
+}
 
+.padding1{
+    padding:1rem;
+}
 
+.margin-bottom{
+    margin-bottom: 1rem;
+    p{
+        margin-bottom: 1rem;
+    }
+}
 
-
- 
+.back1{
+    width:85%;
+    margin: 0 7.5%;
+    position: absolute;
+    top:10rem;
+    // border:1px solid grey;
+    box-shadow: 1px 1px 3px 2px white;
+    border-radius: 10px;
+    #success{
+        text-align: center;
+        p{
+            padding-bottom: 2rem;
+        }
+        button{
+            font-weight: bolder;
+        }
+    }
+}
