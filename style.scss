@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
 
 $Dark-gray: hsl(0, 0%, 48%);
-$Moderate-cyan: hsl(176, 50%, 47%);
-$Dark-cyan: hsl(176, 72%, 28%);
+$Moderate-cyan: #3cb4ac;
+$Dark-cyan: #147b74;
 $Black: hsl(0, 0%, 0%);
 $light-grey:#f3f3f3;;
 
@@ -35,6 +35,9 @@ body{
     .flex-box1{
         display: flex;
         align-items: center;
+        h3:hover{
+            color:$Moderate-cyan;
+        }
     }
     h2{
         color: $Black;
@@ -148,6 +151,7 @@ body{
 
         #bookmark{
             padding:0;
+            
         }
 
         .btn-text{
@@ -195,7 +199,6 @@ body{
 
 
     .block-small{
-        // padding: 1rem;
         border:1px solid rgb(189, 189, 189);
         border-radius: 1rem;
         width: 95%;
@@ -247,12 +250,12 @@ body{
     top:10em;
 }
 
+
 #close-btn{
     filter:invert(50%);
 }
 
 #modal-selection{
-    // border:1px solid grey;
     border-radius: 10px;
     box-shadow: 1px 1px 3px 2px white;
 }
@@ -304,7 +307,6 @@ body{
     margin: 0 7.5%;
     position: absolute;
     top:10rem;
-    // border:1px solid grey;
     box-shadow: 1px 1px 3px 2px white;
     border-radius: 10px;
     #success{

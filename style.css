@@ -44,6 +44,10 @@ body .flex-box1 {
           align-items: center;
 }
 
+body .flex-box1 h3:hover {
+  color: #3cb4ac;
+}
+
 body h2 {
   color: black;
   padding: 1rem 0;
