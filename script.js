@@ -22,13 +22,11 @@ bookmarkmain.addEventListener("click",bookmarked);
 selectreward.forEach(a=>a.addEventListener("click",display))
 
 if(window.innerWidth>700){
-    // document.querySelector("#menu-img").style.display="none";
     console.log("more")
     document.querySelector("#top-btn").style.justifyContent="space-around";
     bookmark.children[1].classList.remove("blocked");
 }
 else{
-    //document.querySelector("#menu-img").style.display="block";
     console.log(bookmark);
     bookmark.children[1].classList.add("blocked")
 }

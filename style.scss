@@ -209,10 +209,6 @@ body{
         align-items: baseline;
     }
 
-    // .flex-box2{
-    //     display: block;
-    // }
-
 
     .block-small{
         border:1px solid rgb(189, 189, 189);
@@ -223,21 +219,9 @@ body{
             color: $Moderate-cyan;
         }
         .padding1{
-            h3{
-                //padding-top: 1rem;
-            }
             p{
                 padding-top: 1rem;
             }
-        }
-        .grid2{
-            // display: grid;
-            // grid-template-columns: 20% 80%;
-            // align-items: start;
-            // .rad{
-            //     grid-row: 1;
-            //     grid-column: 1;
-            // }
         }
     }
         
