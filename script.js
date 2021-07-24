@@ -1,5 +1,5 @@
 let body=document.querySelector("body");
-let menu=document.querySelector("#menu");
+let menu=document.querySelector("#menu1");
 let backBtn=document.querySelector("#back-btn");
 let main=document.querySelector("#main");
 let backthis=document.querySelector("#modal-selection");
@@ -9,15 +9,29 @@ let thanks=document.querySelector(".back1");
 let gotit=document.querySelector("#gotit");
 let selectreward=document.querySelectorAll(".reward");
 let bookmark=document.querySelector("#bookmark");
+let bookmarkmain=document.querySelector(".bmrk");
 
+console.log(thanks)
 menu.addEventListener("click",showMenu);
 backBtn.addEventListener("click",backtoProject);
 radiobtn.forEach(a=>a.addEventListener('change',radiochange));
 continuebtn.forEach(a=>a.addEventListener('click',done));
 gotit.addEventListener("click",gotitfun);
-bookmark.addEventListener("click",bookmarked);
+bookmarkmain.addEventListener("click",bookmarked);
 
 selectreward.forEach(a=>a.addEventListener("click",display))
+
+if(window.innerWidth>700){
+    // document.querySelector("#menu-img").style.display="none";
+    console.log("more")
+    document.querySelector("#top-btn").style.justifyContent="space-around";
+    bookmark.children[1].classList.remove("blocked");
+}
+else{
+    //document.querySelector("#menu-img").style.display="block";
+    console.log(bookmark);
+    bookmark.children[1].classList.add("blocked")
+}
 
 function showMenu(){
     document.querySelector(".menu-bar").classList.toggle("blocked");
@@ -61,8 +75,8 @@ function radiochange(event){
                 :a
         :hiddenBlocks.forEach(
             a=>a!=elementhiddenBlock
-            ?a.classList.add("blocked")
-            :a
+                ?a.classList.add("blocked")
+                :a
         )
     )
 }
@@ -81,8 +95,14 @@ function done(e)
     backthis.classList.add("blocked");
     thanks.classList.remove("blocked");
     body.style.overflow="hidden";
-    document.documentElement.scrollTop = 30;
     main.classList.add("main-noclick"); 
+
+    if(window.innerWidth>700){
+        document.documentElement.scrollTop = 350;
+    }
+    else{
+        document.documentElement.scrollTop = 30;
+    }
 }
 
 function gotitfun(){
@@ -91,8 +111,10 @@ function gotitfun(){
     main.classList.toggle("main-noclick"); 
 }
 
-function bookmarked(e){
-    e.target.src.includes("icon-bookmark.svg")
-    ?e.target.src="images/icon-bookmark-selected.svg"
-    :e.target.src="images/icon-bookmark.svg"
+function bookmarked(){
+    bookmark.children[0].src.includes("icon-bookmark.svg")
+    ?bookmark.children[0].src="images/icon-bookmark-selected.svg"
+    :bookmark.children[0].src="images/icon-bookmark.svg"
+    bookmark.children[1].classList.toggle("green-font");
 }
+

@@ -15,20 +15,22 @@
   <div id="container">
     <div id="back">
       <div id="nav">
-        <img src="images/logo.svg" alt="logo">
-        <button id="menu">
-          <img src="images/icon-hamburger.svg" alt="menu" id="menu-img">
-        </button>
-        <div class="menu-bar blocked">
-          <div class="menu-bar-item">
-            <h2><a href="#about">About</a></h2>
-          </div>
-          <div class="menu-bar-item">
-            <h2><a href="#discover">Discover</a></h2>
-          </div>
-          <div class="menu-bar-item">
-            <h2><a href="#getstarted">Get Started</a></h2>
-          </div>
+        <div id="im"><img src="images/logo.svg" alt="logo"></div>
+        <div>
+          <button id="menu1">
+            <img src="images/icon-hamburger.svg" alt="menu" id="menu-img">
+          </button>
+          <div class="menu-bar blocked" id="menu">
+            <div class="menu-bar-item">
+              <h2><a href="#about">About</a></h2>
+            </div>
+            <div class="menu-bar-item">
+              <h2><a href="#discover">Discover</a></h2>
+            </div>
+            <div class="menu-bar-item">
+              <h2><a href="#getstarted">Get Started</a></h2>
+            </div>
+        </div>
         </div>
       </div>
     </div>
@@ -38,28 +40,31 @@
         <img src="images/logo-mastercraft.svg" alt="Mastercraft" id="logo-master">
         <h2>Mastercraft Bamboo Monitor Riser</h2>
         <p>A  beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
-        <div class="flex-box">
+        <div class="flex-box" id="top-btn">
           <button class="btn green-btn" id="back-btn">
             <h3 class="btn-text">Back this project</h3>
           </button>
-          <button class="btn" id="bookmark">
+          <button class="btn bmrk" id="bookmark">
             <img src="images/icon-bookmark.svg">
+            <h3 class="blocked">Bookmark</h3>
           </button>
         </div>
       </div>
     
       <div class="block">
-        <div class="num m">
-          <div class="num-big">$89,914</div>
-          <div>of $100,000 backed</div>
-        </div>
-        <div class="num">
-          <div class="num-big">5,007</div>
-          <div> total backers</div>
-        </div>
-        <div class="num">
-          <div class="num-big">56</div>
-          <div> days left</div>
+        <div  id="stats">
+          <div class="num m">
+            <div class="num-big">$89,914</div>
+            <div>of $100,000 backed</div>
+          </div>
+          <div class="num">
+            <div class="num-big">5,007</div>
+            <div> total backers</div>
+          </div>
+          <div class="num">
+            <div class="num-big">56</div>
+            <div> days left</div>
+          </div>
         </div>
         <div id="bar">
           <div id="bar-in"></div>
@@ -76,20 +81,24 @@
 
         <div class="block-small">
           <div class="padding1">
+            <div class="flex-box2">
             <h3>Bamboo Stand</h3>
             <h3 class="green-font">Pledge $25 or more</h3>
+            </div>
             <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.
             </p>
-            <div class="flex-box1">
-              <div class="num-big margin-right">101</div>left
+            <div class="flex-box2">
+              <div class="flex-box1">
+                <div class="num-big margin-right">101</div>left
+              </div>
+              <button class="btn green-btn reward" id="bamboo">
+                <h4 class="btn-text" id="bamboo">Select Reward</h4>
+              </button>
             </div>
-            <button class="btn green-btn reward" id="bamboo">
-              <h3 class="btn-text" id="bamboo">Select Reward</h3>
-            </button>
           </div>
           <div class="hidden-block-small blocked hide1" id="bamboo-hidden">
             <p>Enter your pledge</p>
-            <div class="flex-box2 padding1">
+            <div class="flex-box3 padding1">
               <div class="btn num-small num-small1 button-grey-back">
                 <span>$</span>
                 <input type="text" value="25" class="num-small num-small1" maxlength="4">
@@ -101,20 +110,24 @@
 
         <div class="block-small">
           <div class="padding1">
-            <h3>Black Edition Stand</h3>
-            <h3 class="green-font">Pledge $75 or more</h3>
+            <div class="flex-box2">
+              <h3>Black Edition Stand</h3>
+              <h3 class="green-font">Pledge $75 or more</h3>
+            </div>
             <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.
             </p>
-            <div class="flex-box1">
-              <div class="num-big margin-right">64</div>left
+            <div class="flex-box2">
+              <div class="flex-box1">
+                <div class="num-big margin-right">64</div>left
+              </div>
+              <button class="btn green-btn reward" id="blacked">
+                <h4 class="btn-text" id="blacked">Select Reward</h4>
+              </button>
             </div>
-            <button class="btn green-btn reward" id="blacked">
-              <h3 class="btn-text" id="blacked">Select Reward</h3>
-          </button>
           </div>
           <div class="hidden-block-small blocked hide1" id="blacked-hidden">
             <p>Enter your pledge</p>
-            <div class="flex-box2 padding1">
+            <div class="flex-box3 padding1">
               <div class="btn num-small num-small1 button-grey-back">
                 <span>$</span>
                 <input type="text" value="75" class="num-small num-small1" maxlength="4">
@@ -125,16 +138,22 @@
         </div>
 
         <div class="block-small out padding1">
-          <h3>Mahogany Special Edition</h3>
-          <h3 class="green-font">Pledge $200 or more</h3>
-          <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.
-          </p>
+          <div class="padding1">
+            <div class="flex-box2">
+              <h3>Mahogany Special Edition</h3>
+              <h3 class="green-font">Pledge $200 or more</h3>
+            </div>
+            <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.
+            </p>
+          </div>
+         <div class="flex-box2">
           <div class="flex-box1">
             <div class="num-big margin-right">0</div>left
           </div>
           <button class="btn grey-btn" id="out-of-stock">
-            <h3 class="btn-text">Out of Stock</h3>
+            <h4 class="btn-text">Out of Stock</h4>
           </button>
+         </div>
         </div>
         
       </div>
@@ -157,34 +176,38 @@
       <div class="block-small radioBlocks">
         <div class="padding1">
           <div class="margin-bottom">
-            <div class="flex-box1">
+            <div class="flex-box1 grid2">
               <input type="radio" name="back" value="pledge-no-reward" id="pledge-no-reward" class="margin-right rad">
-              <h3>Pledge with no reward</h3>
+              <div class="grid">
+                <h3>Pledge with no reward</h3>
+                <p class="cen2">Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.</p>
+              </div>
             </div>
           </div>
-          <p>Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.</p>
         </div>
       </div>
 
       <div class="radioBlocks block-small">
         <div class="padding1">
           <div class="margin-bottom">
-            <div class="flex-box1 ">
+            <div class="flex-box1 grid2">
               <input type="radio" name="back" value="bamboo-stand" id="bamboo-stand" class="margin-right rad">
-              <div>
-                <h3>Bamboo Stand</h3>
-                <h3 class="green-font">Pledge $25 or more</h3>
+              <div class="grid">
+                <div class="flex">
+                  <h3>Bamboo Stand</h3>
+                  <h3 class="green-font">Pledge $25 or more</h3>
+                </div>
+              <p class="cen2">You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.Shipping is included.</p>
+              <div class="flex-box1 right">
+                <div class="num-small margin-right">101</div>left
               </div>
-            </div>
-            <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.Shipping is included.</p>
-            <div class="flex-box1">
-              <div class="num-small margin-right">101</div>left
+              </div>
             </div>
           </div>
         </div>
         <div class="hidden-block-small blocked" id="bamboo-stand-hidden">
           <p>Enter your pledge</p>
-          <div class="flex-box2 padding1">
+          <div class="flex-box3 padding1">
             <div class="btn num-small num-small1 button-grey-back">
               <span>$</span>
               <input type="text" value="25" class="num-small num-small1" maxlength="4">
@@ -197,23 +220,25 @@
       <div class="radioBlocks block-small">
         <div class="padding1">
           <div class="margin-bottom">
-            <div class="flex-box1 ">
-                <input type="radio" name="back" value="black-edition-stand" id="black-edition-stand" class="margin-right rad">
-              <div>
-                <h3>Black Edition Stand</h3>
-                <h3 class="green-font">Pledge $75 or more</h3>
-              </div>
-            </div>
-            <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+            <div class="flex-box1 grid2">
+              <input type="radio" name="back" value="black-edition-stand" id="black-edition-stand" class="margin-right rad">
+              <div class="grid">
+                <div class="flex">
+                  <h3>Black Edition Stand</h3>
+                  <h3 class="green-font">Pledge $75 or more</h3>
+                </div>
+              <p class="cen2">You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
               member list. Shipping is included.</p>
-            <div class="flex-box1">
-              <div class="num-small margin-right">64</div>left
+              <div class="flex-box1 right">
+                <div class="num-small margin-right">64</div>left
+              </div>
             </div>
           </div>
         </div>
+        </div>
         <div class="hidden-block-small blocked" id="black-edition-stand-hidden">
           <p>Enter your pledge</p>
-          <div class="flex-box2 padding1">
+          <div class="flex-box3 padding1">
             <div class="btn num-small num-small1 button-grey-back">
               <span>$</span>
               <input type="text" value="75" class="num-small num-small1" maxlength="4">
@@ -225,23 +250,24 @@
 
       <div class="block-small out padding1">
         <div class="margin-bottom">
-          <div class="flex-box1">
+          <div class="flex-box1 grid2">
             <input type="radio" name="back" value="mohogany-special-edition"
             class="margin-right rad" >
-            <div>
-              <h3>Mahogany Special Edition</h3>
-              <h3 class="green-font">Pledge $200 or more</h3>
+            <div class="grid">
+              <div class="flex">
+                <h3>Mahogany Special Edition</h3>
+                <h3 class="green-font">Pledge $200 or more</h3>
+              </div>
+              <p class="cen2">You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included..</p>
+              <div class="flex-box1 right">
+                <div class="num-small margin-right">0</div>left
+              </div>
             </div>
-          </div>
-          <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included..</p>
-        </div>
-        <div class="flex-box1">
-          <div class="num-small margin-right">0</div>left
         </div>
       </div>
     </div>
   </div>
-  
+  </div>
   <!-- Success modal start -->
 
   <div class="back1 blocked">
@@ -256,9 +282,6 @@
       </div>
     </div>
   </div>
-  
-
-     
   <script src="script.js"></script>
 </body>
 </html>
