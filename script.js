@@ -96,7 +96,7 @@ function done(e)
     main.classList.add("main-noclick"); 
 
     if(window.innerWidth>700){
-        document.documentElement.scrollTop = 350;
+        document.documentElement.scrollTop = 450;
     }
     else{
         document.documentElement.scrollTop = 30;

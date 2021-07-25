@@ -4,7 +4,7 @@ $Dark-gray: hsl(0, 0%, 48%);
 $Moderate-cyan: #3cb4ac;
 $Dark-cyan: #147b74;
 $Black: hsl(0, 0%, 0%);
-$light-grey:#f3f3f3;;
+$light-grey:#f3f3f3;
 
 *{
     padding: 0;
@@ -41,6 +41,12 @@ body{
         align-content: flex-end;
         align-items: flex-end;
     }
+    .flex-box2{
+        display: block;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
     h2{
         color: $Black;
         padding: 1rem 0;
@@ -61,6 +67,14 @@ body{
 
     .green-btn{
         background: $Moderate-cyan;
+    }
+    .h4{
+        font-weight: bolder;
+    }
+    .flex-box4{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
     }
 }
 .green-font{
@@ -194,6 +208,9 @@ body{
             border-radius: 50px;;
         } 
     }
+    .h3{
+        font-weight: bolder;
+    }
 }
 
 
@@ -202,12 +219,6 @@ body{
     padding: 1rem 1rem;
     background: white;
     border-radius: 10px;
-
-    .flex-box2{
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-    }
 
 
     .block-small{
@@ -222,10 +233,13 @@ body{
             p{
                 padding-top: 1rem;
             }
+            .h4{
+                pointer-events: none;
+            }
         }
     }
         
-    h3{
+    h3,.h3{
         color: $Black;
         font-size: 16px;
         font-weight: bolder;
@@ -409,11 +423,11 @@ body{
                     display: flex;
                     background: $light-grey;
                     align-items: center;
-                    h3{
+                    .h3{
                         margin-left: 1rem;
                         padding-right: 2rem;
                     }
-                    h3:hover{
+                    .h3:hover{
                         color: $Moderate-cyan;
                     }
                 }
@@ -451,7 +465,7 @@ body{
             grid-template-columns: 90% 10%;
             .flex{
                 display: flex;
-                h3{
+                h3,.h3{
                     margin-right: 1rem;
                 }
             }
@@ -463,6 +477,13 @@ body{
             .cen2{
                 grid-row: 2;
                 grid-column:1/3;
+            }
+        }
+    }
+    .block-small{
+        .padding1{
+            .h4{
+                pointer-events: none;
             }
         }
     }
