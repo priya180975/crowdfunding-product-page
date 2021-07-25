@@ -4,6 +4,10 @@
 #####################################################
 *.sketch
 *.fig
+*.css
+*.css.map
+/design
+
 
 # Avoid accidental XD upload if you convert the design file
 ###############################################
